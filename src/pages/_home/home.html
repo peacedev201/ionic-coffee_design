@@ -1,0 +1,52 @@
+<ion-menu [content]="mycontent">
+  <ion-content>
+    <ion-row>
+        <ion-col >
+            <button  ion-button style="background-color:red; width: 76%; direction: rtl;" (click)="gs.setArabic(false)" >English</button>
+        </ion-col>
+        <ion-col >
+            <button  ion-button style="background-color:green; width:76%" (click)="gs.setArabic(true)">Arabic</button>
+        </ion-col>
+    </ion-row>
+    <ion-list >
+      <h3 (click)="goProfilePage()">{{"Profile"|translate}}</h3>
+      <h3 (click)="goOrderPage()">{{"My orders"|translate}}</h3>
+      <h3 >{{"Schedule"|translate}}</h3>
+      <h3>{{"Wallet"|translate}}</h3>
+      <h3 (click)="goContactPage()">{{"Contact us"|translate}}</h3>
+      <h3 (click)="goLogoutPage()">{{"Logout"|translate}}</h3>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<ion-header>
+  <ion-row>
+    <button ion-button menuToggle style="background: aqua; left:0">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title class='coffee_header'>{{"My Coffee"|translate}}</ion-title>
+  </ion-row>
+</ion-header>
+
+<ion-content #mycontent padding>
+  <ion-row class='img-row'>
+    <img src="assets/img/coffeelogo/costalogo.png" (click)="goCostaPage()" />
+  </ion-row>
+  <ion-row class='img-row'>
+    <img src="assets/img/coffeelogo/nutslogo.png" (click)="goCostaPage()" />
+  </ion-row>
+  <ion-row class='img-row'>
+    <img src="assets/img/coffeelogo/coselogo.png" (click)="goCostaPage()" />
+  </ion-row>
+  <ion-row class='img-row'>
+    <img src="assets/img/coffeelogo/javalogo.jpg" (click)="goCostaPage()" />
+  </ion-row>
+  <ion-row class='img-row'>
+    <img src="assets/img/coffeelogo/starbuckslogo.png" (click)="goCostaPage()" />
+  </ion-row>
+  <ion-row class='img-row'>
+    <img src="assets/img/coffeelogo/cupslogo.png" (click)="goCostaPage()" />
+  </ion-row>
+  <ion-row class='img-row'>
+    <img src="assets/img/coffeelogo/timlogo.jpg" (click)="goCostaPage()" />
+  </ion-row>
+</ion-content>

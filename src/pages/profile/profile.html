@@ -1,0 +1,22 @@
+<ion-header>
+    <ion-row style = "background: aqua"></ion-row>
+</ion-header>
+
+<ion-content padding>
+    <ion-row style = "height:17vh; background: white;">
+        <img style="height:100%;  margin: auto;" src = "assets/img/user/user.png" />
+    </ion-row> 
+    <div style = "margin-top: 10vh">
+        <ion-row style = "height:7vh; background: white;">
+            <ion-input [placeholder]="'Email'|translate"></ion-input>
+        </ion-row>
+        <ion-row style = "height:7vh; background: white;">
+            <ion-input [placeholder]="'Password'|translate"></ion-input>
+        </ion-row>
+    </div>
+        
+</ion-content>
+<ion-footer style="margin:auto">
+    <button ion-button style="background-color:aqua; width:30%" >{{"Save"|translate}}</button>
+    <button ion-button style="background-color:aqua; width: 30%" >{{"Edit"|translate}}</button>
+</ion-footer>

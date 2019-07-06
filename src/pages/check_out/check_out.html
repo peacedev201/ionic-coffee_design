@@ -1,0 +1,45 @@
+  <ion-content padding>
+        <img style = "width: 100%; " src="assets/img/costa/costa1.jpg" />
+        <h4 style = " height: 30px ; font-size: 22px;"> {{"Size:"|translate}}</h4>
+        <ion-row style="background: white ; height: 20%">
+            <ion-list style = "width:100%;  " radio-group >
+                <ion-item>
+                    <ion-label>{{"Large"|translate}}</ion-label>
+                    <ion-radio value="friends" checked></ion-radio>
+                </ion-item>
+                <ion-item>
+                    <ion-label>{{"Medium"|translate}}</ion-label>
+                    <ion-radio value="family"></ion-radio>
+                </ion-item>
+                <ion-item>
+                    <ion-label>{{"Small"|translate}}</ion-label>
+                    <ion-radio value="enemies" [disabled]="isDisabled"></ion-radio>
+                </ion-item>
+            </ion-list>
+        </ion-row>
+        <h4>{{"Additions:"|translate}}</h4>
+        <ion-row style="background: white">
+            <ion-list style = "width:100%" radio-group>
+                <ion-item>
+                    <ion-label>{{"Caramel"|translate}}</ion-label>
+                    <ion-radio value="friends" checked></ion-radio>
+                </ion-item>
+                <ion-item>
+                    <ion-label>{{"Caramel"|translate}}</ion-label>
+                    <ion-radio value=""></ion-radio>
+                </ion-item>
+                <ion-item>
+                    <ion-label>{{"Caramel"|translate}}</ion-label>
+                    <ion-radio value="family"></ion-radio>
+                </ion-item>
+                <ion-item>
+                    <ion-label>{{"Caramel"|translate}}</ion-label>
+                    <ion-radio value="enemies" [disabled]="isDisabled"></ion-radio>
+                </ion-item>
+            </ion-list>
+        </ion-row>
+        
+
+        <p style = "bottom: 0px; height: 30px ; font-size: 22px;" (click)="goCompletePage()" > {{"Check out"|translate}}<ion-icon name="cart"></ion-icon></p>
+  </ion-content>
+  

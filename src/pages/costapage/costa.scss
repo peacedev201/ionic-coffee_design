@@ -1,0 +1,27 @@
+.img-row-1{
+    margin: auto;
+    padding: 3px;
+    background: white;
+    height: 25%;
+    border-bottom: 1px solid gray;
+    .col{
+        .border-left{
+            border-left: 1px solid gray;
+        }
+        text-align: center;
+        margin: auto;
+        width: 100%;
+        img{
+            margin: auto;
+            width: 90%;
+          }
+    }   
+  }
+
+  p{
+      padding: 0px !important;
+    margin:0px !important;
+    text-align: center;
+    background: aqua;
+}
+
